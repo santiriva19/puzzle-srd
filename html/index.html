@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/main.js"></script>
+        <title>Puzzle</title>
+    </head>
+    <bod>
+            <div class="cont-title">
+                <h1>Santiago's Puzzle</h1>
+            </div>
+            <div class="cont-table">
+                <div class="cont-button">
+                    <input id="button_start" onclick="sortImages()" type="button" class="custom-button" value="Start Game"/>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="0" class="image-cell" onclick="selectImage(event.target.id)"> 
+                            </td>
+                            <td id="1" class="image-cell" onclick="selectImage(event.target.id)"> 
+                            </td>
+                            <td id="2" class="image-cell" onclick="selectImage(event.target.id)"> 
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td class="image-cell" id="3" onclick="selectImage(event.target.id)"> 
+                            </td>
+                            <td class="image-cell" id="4" onclick="selectImage(event.target.id)"> 
+                            </td>
+                            <td class="image-cell" id="5" onclick="selectImage(event.target.id)"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image-cell" id="6" onclick="selectImage(event.target.id)"> 
+                            </td>
+                            <td class="image-cell" id="7" onclick="selectImage(event.target.id)"> 
+                            </td>
+                            <td class="image-cell" id="8" onclick="selectImage(event.target.id)"> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cont-button">
+                    <input id="button_start" onclick="checkGame()" type="button" class="custom-button-finish" value="Finish"/>
+                </div>
+
+            </div>
+    </body>
+</html>
